@@ -1,0 +1,119 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+#content div{
+  width: 75px;
+  height: 75px;
+  box-shadow: 0 0 0 2px;
+  line-height: 75px;
+  font-size: 50px;
+  cursor: pointer;
+  background-color: skyblue;
+  border-radius: 11px;
+  transition: 0.4s;
+}
+#content div:hover{
+  background-color: pink;
+}
+#content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 90%;
+  max-width: 300px;
+  margin: auto;
+  padding: 20px;
+}
+#game{
+  background-color: blueviolet;
+  font-family: sans-serif;
+  text-align: center;
+  height: auto;
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 30px;
+  padding: 20px;
+  margin-top: 20px;
+}
+#tittle{
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+  border-radius: 30px;
+  font-size: 30px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+button{
+  background-color: pink;
+  color: black;
+  border: none;
+  width: 70px;
+  height: 30px;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+button:hover{
+  background-color: skyblue;
+  color: black;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transform: scale(1.4);
+}
+@media (max-width: 1024px) {
+  #content{
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    padding: 20px;
+  }
+  #content div{
+    width: 70px;
+    height: 70px;
+    font-size: 45px;
+    line-height: 70px;
+  }
+  #game{
+    height: auto;
+    width: 95%;
+    margin-top: 20px;
+  }
+  #tittle{
+    font-size: 25px;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  #content{
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    padding: 10px;
+  }
+  #content div{
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  #game{
+    height: auto;
+    width: 95%;
+    margin-top: 10px;
+  }
+  #tittle{
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+}
